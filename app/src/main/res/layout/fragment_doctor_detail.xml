@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DoctorDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/igDoctorImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220mdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/igBackArrow"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_margin="@dimen/_16mdp"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:text="Dr.Smith Dave"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_18font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/igDoctorImage" />
+
+    <TextView
+        android:id="@+id/txSpecialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:text="Heart Specialist"
+        android:textColor="@color/blue"
+        android:alpha="0.8"
+        android:textSize="@dimen/_12font_mdp"
+        app:layout_constraintEnd_toEndOf="@+id/txDoctorName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txDoctorName"
+        app:layout_constraintTop_toBottomOf="@+id/txDoctorName" />
+
+    <TextView
+        android:id="@+id/txHospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:text="Civil Hospital"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintEnd_toEndOf="@+id/txSpecialist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txSpecialist"
+        app:layout_constraintTop_toBottomOf="@+id/txSpecialist" />
+
+    <TextView
+        android:id="@+id/txDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_18mdp"
+        android:alpha="0.7"
+        android:text="A doctor is responsible for all sides of care of a patient. They diagnose, educate, and treat patients to ensure that they have the best possible care. A few of the main duties of a doctor are performing diagnostic tests, recommending specialists for patients, document patient's medical history, and educating patients.A doctor is responsible for all sides of care of a patient"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAppointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txHospitalName" />
+
+    <Button
+        android:id="@+id/btnAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16mdp"
+        android:background="@drawable/border"
+        android:text="Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
